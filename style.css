@@ -1,0 +1,192 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #d4e5fa
+}
+
+.royaldashboard {
+  color: #003366;
+  padding-left: 51px;
+  font-size: 15px;
+}
+
+.main-content {
+  margin: 10px;
+  padding: 10px 30px;
+  padding-right: 50px;
+  padding-left: 20px;
+}
+
+.header {
+  grid-area: header;
+  justify-content: space-between;
+  display: flex;
+}
+
+.header input {
+  justify-content: space-between;
+  padding: 10px;
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}  
+
+.container {
+  display: grid;
+  grid-template-areas:
+    "nav nav main main main main main"
+    "nav nav aside aside section1 section1 section2"
+    "nav nav footer footer footer footer footer";
+}
+
+nav {
+  grid-area: nav;
+  border-radius: 10px;
+  width: 200px;
+  height: auto;
+  padding: 47px 0px;
+  margin-left: 40px;
+  background-color: #0052b4;
+}
+
+nav a {
+  display: block;
+  padding: 19px 53px;
+  color: #ffffff;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background-color: #123e72;
+}
+
+nav .keluar {
+  color: #ffaf8a;
+}
+
+main {
+  grid-area: main;
+  width: 984px;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0052b4;
+  margin-left: 1rem;
+  border-radius: 10px;
+  width: 93%;
+}
+
+.welcome {
+  margin-left: 10px;
+  color: #ffffff;
+  padding: 10px;
+}
+
+.welcome p {
+  margin-top: 10px;
+}
+
+.profil img {
+  border: 5px solid white;
+  width: 100px;
+  height: 100px;
+  margin: 1rem;
+  margin-right: 100px;
+  border-radius: 50%;
+}
+
+aside {
+  grid-area: aside;
+  width: 410px;
+  margin-left: 1rem;
+  background-color: #ffffff;
+  margin-top: 10px;
+}
+
+aside h3 {
+  margin-top: 10px;
+  margin-left: 6px;
+}
+
+aside img {
+  width: 400px;
+  height: 300px;
+  margin-top: 10px;
+  margin-left: 6px;
+  border-radius: 5px;
+}
+
+.section1 {
+  grid-area: section1;
+  margin-top: 10px;
+  background-color: #ffffff;
+  width: 200px;
+}
+
+.matkul,
+.aktifitas {
+  background-color: #f0f7ff;
+}
+
+.section1 h3,
+.matkul,
+.section2 h3,
+.aktifitas {
+  margin: 10px;
+}
+
+.matkul p,
+.aktifitas p {
+  margin-top: 5px;
+  color: #0052b4;
+}
+
+.section2 {
+  grid-area: section2;
+  margin-top: 10px;
+  margin-right: 40px;
+  background-color: #ffffff;
+  width: 240px;
+}
+
+footer {
+  grid-area: footer;
+  margin-top: 10px;
+  margin-left: 1rem;
+  width: 93%;
+  background-color: #ffffff;
+}
+
+footer h3, p {
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+footer p span {
+  color: black;
+  font-weight: bold;
+}
+
+.matkul {
+  border-radius: 10px;
+  background-color: #d4e5fa;
+  text-align: center; 
+}
+
+.aktifitas {
+  border-radius: 10px;
+  background-color: #d4e5fa;
+  text-align: center;
+}
+
+.dokumen {
+border-radius: 5px;
+padding-top: 3px;
+margin-left: 8px;
+margin-right: 8px;
+background-color: #d4e5fa;
+text-align: justify;
+}
